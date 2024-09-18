@@ -1,0 +1,23 @@
+[data-theme-dark=false]{
+    background-color: white;
+    h1{
+        color: black;
+    }
+    h2{
+        color: #0669AA;
+    }
+    p, a{
+        color: #474747;
+        text-decoration-color: #005897;
+    }
+    .svg-inline--fa{
+        color: black;
+    }
+    select{
+        background-color: black;
+        color: white;
+    }
+    aside{
+        border-color: black;
+    }
+}

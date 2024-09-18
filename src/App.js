@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Home from './Home'
+import './style.scss';
 function App() {
   const [themeDark, setThemeDark] = useState(window.matchMedia('(prefers-color-scheme: dark)').matches);
   const languages = [{flag:"../dist/img", name: "pt-BR"} ,{ flag:"../dist/img", name:"en"}];
