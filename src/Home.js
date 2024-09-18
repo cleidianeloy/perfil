@@ -4,12 +4,21 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 library.add(faMoon, faSun);
 function Home(props){
     const [themeDark, setThemeDark] = props.themeDark;
+    const [languages, currentLang] = props.lang;
     return (
         <section>
             <aside>
-                <button><FontAwesomeIcon icon={`fa-solid ${themeDark ? 'fa-moon' : 'fa-sun'}` }/> </button>
+                <button onClick={() => setThemeDark((prevTheme) => !prevTheme)}>
+                    <FontAwesomeIcon icon={`fa-solid ${themeDark ? 'fa-moon' : 'fa-sun'}` }/> 
+                </button>
                 <select>
-                    
+                    {
+                        languages.map(lang =>{
+                            return <option value={lang.name} select={lang.name === currentLang.name}>
+                                    <img src={lang.flag} alt="bandeira representando o país da opção"/><span>{lang.name}</span>
+                                </option>
+                        })
+                    }
                 </select>
             </aside>
             <main>
