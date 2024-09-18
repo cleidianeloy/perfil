@@ -1,10 +1,16 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons'
+import { library } from "@fortawesome/fontawesome-svg-core";
+library.add(faMoon, faSun);
 function Home(props){
     const [themeDark, setThemeDark] = props.themeDark;
     return (
         <section>
             <aside>
-                <button></button>
-                <select></select>
+                <button><FontAwesomeIcon icon={`fa-solid ${themeDark ? 'fa-moon' : 'fa-sun'}` }/> </button>
+                <select>
+                    
+                </select>
             </aside>
             <main>
                 <img/>
