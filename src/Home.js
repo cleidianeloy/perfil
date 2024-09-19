@@ -11,9 +11,11 @@ const getSVGURI = (faIcon, color) =>{
     if(color) abstract.chldren[0].attributes.fill = color;
     return `data:image/svg+xml;base64,${btoa(toHtml(abstract))}`;
 }
+
 function Home(props){
     const [themeDark, setThemeDark] = props.themeDark;
     const [languages, currentLang] = props.lang;
+
     return (
         <section data-theme-dark={themeDark}>
             <aside>
@@ -21,13 +23,13 @@ function Home(props){
                     <button onClick={() => setThemeDark((prevTheme) => !prevTheme)}>
                         <FontAwesomeIcon icon={`fa-solid ${themeDark ?  'fa-sun' :'fa-moon' }` }/> 
                     </button>
-                    <select>
+                    <select style={{backgroundImage: `url(${getSVGURI(faImage)})`}}>
                         {
-                            languages.map(lang =>{
-                                return <option value={lang.name} select={lang.name === currentLang.name}>
-                                        <img  src={lang.flag} alt="bandeira representando o país da opção"/><span>{lang.name}</span>
-                                    </option>
-                            })
+                            languages.map((lang, id) =>{
+                                return <option  value={lang.name} select={lang.name === currentLang.name}>
+                                        <span>{lang.name}</span>
+                                       </option>
+                            })  
                         }
                     </select>
                 </div>

@@ -103,8 +103,20 @@ section{
             gap: 1rem;
             margin: 2rem;
         }
+        select{
+            background-repeat: no-repeat;
+            background-position: 10%;
+            background-size: 2rem;
+            padding: 1rem 1rem 1rem 3rem;
+            border-radius: 2rem;
+        }
     }
     main{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
         h1, h2{
             font-weight: 300;
             margin: 0;
@@ -120,10 +132,14 @@ section{
         }
   
         .right{
-            max-width: 30rem;
+            max-width: 40rem;
+            padding-inline: 3rem;
+            box-sizing: border-box;
+
         }
         .left{
-            position: relative;
+             position: relative;
+            margin-bottom: 2rem;
             img{
                 min-height: 200px;
                 min-width: 200px;
@@ -143,10 +159,6 @@ section{
                 border-radius: 50%;
             }
         }
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
+
     }
 }
