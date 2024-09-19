@@ -80,6 +80,30 @@ section{
     min-height: 100vh;
     width: 100vw ;
     @extend .roboto-light;
+    aside{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        .config-container{
+            button{
+                background-color: transparent;
+                border: none;
+                svg{
+                    height: 2rem;
+                }
+            }
+            width: min-content;
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            border: solid white 2px;
+            padding: 1rem;
+            border-radius: 3rem;
+            align-items: center;
+            gap: 1rem;
+            margin: 2rem;
+        }
+    }
     main{
         h1, h2{
             font-weight: 300;
@@ -94,6 +118,7 @@ section{
         p, a{
             font-size: 1.2em;
         }
+  
         .right{
             max-width: 30rem;
         }

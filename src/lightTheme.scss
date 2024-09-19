@@ -1,5 +1,10 @@
 [data-theme-dark=false]{
     background-color: white;
+    aside{
+        .config-container{
+            border-color: black;
+        }
+    }
     h1{
         color: black;
     }
@@ -10,6 +15,7 @@
         color: #474747;
         text-decoration-color: #005897;
     }
+    
     .svg-inline--fa{
         color: black;
     }

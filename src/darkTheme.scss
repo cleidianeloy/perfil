@@ -1,5 +1,10 @@
 [data-theme-dark=true]{
     background-color: #1D1E1E;
+    aside{
+        .config-container{
+            border-color: white;
+        }
+    }
     h1{
         color: white;
     }
@@ -10,6 +15,7 @@
         color: #CCCCCC;
         text-decoration-color: #0A9AeA;
     }
+
     .left{
         img{
             background-color: white;

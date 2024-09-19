@@ -17,18 +17,21 @@ function Home(props){
     return (
         <section data-theme-dark={themeDark}>
             <aside>
-                <button onClick={() => setThemeDark((prevTheme) => !prevTheme)}>
-                    <FontAwesomeIcon icon={`fa-solid ${themeDark ?  'fa-sun' :'fa-moon' }` }/> 
-                </button>
-                <select>
-                    {
-                        languages.map(lang =>{
-                            return <option value={lang.name} select={lang.name === currentLang.name}>
-                                    <img  src={lang.flag} alt="bandeira representando o país da opção"/><span>{lang.name}</span>
-                                </option>
-                        })
-                    }
-                </select>
+                <div className='config-container'>
+                    <button onClick={() => setThemeDark((prevTheme) => !prevTheme)}>
+                        <FontAwesomeIcon icon={`fa-solid ${themeDark ?  'fa-sun' :'fa-moon' }` }/> 
+                    </button>
+                    <select>
+                        {
+                            languages.map(lang =>{
+                                return <option value={lang.name} select={lang.name === currentLang.name}>
+                                        <img  src={lang.flag} alt="bandeira representando o país da opção"/><span>{lang.name}</span>
+                                    </option>
+                            })
+                        }
+                    </select>
+                </div>
+
             </aside>
             <main>
                 <div className="left">
