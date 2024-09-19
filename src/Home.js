@@ -1,10 +1,16 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons'
-import { library } from "@fortawesome/fontawesome-svg-core";
+import { faMoon, faSun, faImage } from '@fortawesome/free-solid-svg-icons'
+import { library, toHtml, icon } from "@fortawesome/fontawesome-svg-core";
 
 import './lightTheme.scss'
 import './darkTheme.scss'
-library.add(faMoon, faSun);
+
+library.add(faMoon, faSun, faImage);
+const getSVGURI = (faIcon, color) =>{
+    const abstract = icon(faIcon).abstract[0];
+    if(color) abstract.chldren[0].attributes.fill = color;
+    return `data:image/svg+xml;base64,${btoa(toHtml(abstract))}`;
+}
 function Home(props){
     const [themeDark, setThemeDark] = props.themeDark;
     const [languages, currentLang] = props.lang;
@@ -18,7 +24,7 @@ function Home(props){
                     {
                         languages.map(lang =>{
                             return <option value={lang.name} select={lang.name === currentLang.name}>
-                                    <img src={lang.flag} alt="bandeira representando o país da opção"/><span>{lang.name}</span>
+                                    <img  src={lang.flag} alt="bandeira representando o país da opção"/><span>{lang.name}</span>
                                 </option>
                         })
                     }
@@ -26,7 +32,7 @@ function Home(props){
             </aside>
             <main>
                 <div className="left">
-                    <img width="200px" height="200px" alt='foto de perfil'/>
+                    <img style={{backgroundImage: `url(${getSVGURI(faImage)})`}} width="200px" height="200px" alt='foto de perfil'/>
                 </div>
                 <div className="right">
                     <h1>Cleidiane da Rosa Eloy</h1>

@@ -1,5 +1,5 @@
 [data-theme-dark=true]{
-    background-color: #202F33;
+    background-color: #1D1E1E;
     h1{
         color: white;
     }
@@ -9,6 +9,12 @@
     p, a{
         color: #CCCCCC;
         text-decoration-color: #0A9AeA;
+    }
+    .left{
+        img{
+            background-color: white;
+            color: white;
+        }
     }
     .svg-inline--fa{
         color: white;
