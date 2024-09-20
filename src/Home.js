@@ -8,22 +8,25 @@ import './darkTheme.scss'
 library.add(faMoon, faSun, faImage);
 const getSVGURI = (faIcon, color) =>{
     const abstract = icon(faIcon).abstract[0];
-    if(color) abstract.chldren[0].attributes.fill = color;
+    if(color) {
+         abstract.children[0].attributes.fill = color;
+    }
+
     return `data:image/svg+xml;base64,${btoa(toHtml(abstract))}`;
 }
 
 function Home(props){
     const [themeDark, setThemeDark] = props.themeDark;
     const [languages, currentLang] = props.lang;
-
+    const {text} = currentLang;
     return (
         <section data-theme-dark={themeDark}>
             <aside>
                 <div className='config-container'>
-                    <button onClick={() => setThemeDark((prevTheme) => !prevTheme)}>
+                    <button onClick={() => setThemeDark((prevTheme) => !prevTheme)} aria-label={themeDark ? text.themeDarkLabel : text.themeLightLabel}>
                         <FontAwesomeIcon icon={`fa-solid ${themeDark ?  'fa-sun' :'fa-moon' }` }/> 
                     </button>
-                    <select style={{backgroundImage: `url(${getSVGURI(faImage)})`}}>
+                    <select style={{backgroundImage: `url(${getSVGURI(faImage,  themeDark ? "black": "white")})`}} aria-label={text.selectLabel}>
                         {
                             languages.map((lang, id) =>{
                                 return <option  value={lang.name} select={lang.name === currentLang.name}>
@@ -37,17 +40,17 @@ function Home(props){
             </aside>
             <main>
                 <div className="left">
-                    <img style={{backgroundImage: `url(${getSVGURI(faImage)})`}} width="200px" height="200px" alt='foto de perfil'/>
+                    <img style={{backgroundImage: `url(${getSVGURI(faImage)})`}} width="200px" height="200px" alt=""/>
                 </div>
                 <div className="right">
                     <h1>Cleidiane da Rosa Eloy</h1>
-                    <h2>Desenvolvedora Front-End</h2>
-                    <p>Desenvolvedora Web com paixão por tecnologia e experiência em projetos de ensino a distância. Possui habilidades sólidas em javascript, jquery, CSS, HTML e React. Comprometida com a acessibilidade digital e com o desenvolvimento de soluções inovadoras. Proativa, colaborativa e sempre disposta a aprender e crescer profissionalmente.</p>
+                    <h2>{text.position}</h2>
+                    <p>{text.aboutMe}</p>
 
                     <address>
 
                     </address>
-                    <a href=""> <span>&#8594;</span> Curriculo</a>
+                    <a href=""> <span>&#8594;</span>{text.doc}</a>
                 </div>
             </main>
         </section>
