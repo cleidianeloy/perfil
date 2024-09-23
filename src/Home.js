@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMoon, faSun, faImage } from '@fortawesome/free-solid-svg-icons'
 import { library, toHtml, icon } from "@fortawesome/fontawesome-svg-core";
-
+import Address from './Address';
 import './lightTheme.scss'
 import './darkTheme.scss'
 
@@ -46,11 +46,8 @@ function Home(props){
                     <h1>Cleidiane da Rosa Eloy</h1>
                     <h2>{text.position}</h2>
                     <p>{text.aboutMe}</p>
-
-                    <address>
-
-                    </address>
-                    <a href=""> <span>&#8594;</span>{text.doc}</a>
+                    <Address/>
+                    <a href=""><span>&#8594;</span> {text.doc}</a>
                 </div>
             </main>
         </section>

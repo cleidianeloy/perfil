@@ -159,6 +159,14 @@ section{
                 border-radius: 50%;
             }
         }
-
+        address{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            gap: 1rem;
+            svg.svg-inline--fa {
+                height: 2rem;
+            }
+        }
     }
 }
