@@ -22,8 +22,8 @@ function Address(){
     ] 
     return(
         <address>
-            {contacts.map((contact) => {
-             return <a href={contact.link} aria-label={contact.name} target="_blank">
+            {contacts.map((contact, id) => {
+             return <a key={id} href={contact.link} aria-label={contact.name} target="_blank">
                          <FontAwesomeIcon icon={contact.icon} />
                     </a>
             })}
