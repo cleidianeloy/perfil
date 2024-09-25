@@ -8,6 +8,7 @@ import Address from './Address';
 import './lightTheme.scss';
 import './darkTheme.scss';
 
+import perfil from "./imgs/perfil.jpg";
 
 
 library.add(faMoon, faSun, faImage);
@@ -50,7 +51,7 @@ function Home(props){
             </aside>
             <main>
                 <div className="left">
-                    <img style={{backgroundImage: `url(${getSVGURI(faImage)})`}} width="200px" height="200px" alt=""/>
+                    <img src={perfil} style={{backgroundImage: `url(${getSVGURI(faImage)})`}} width="200px" height="200px" alt=""/>
                 </div>
                 <div className="right">
                     <div className="text">
