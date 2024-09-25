@@ -5,6 +5,8 @@ import './style.scss';
 
 import brazil from "./imgs/brazil.png";
 import eua from "./imgs/eua.png";
+import resume from "./pdf/curriculo.pdf"
+import curriculo from "./pdf/curriculo.pdf";
 
 function App() {
   const [themeDark, setThemeDark] = useState(window.matchMedia('(prefers-color-scheme: dark)').matches);
@@ -15,7 +17,7 @@ function App() {
       position: "Desenvolvedora Front-End", 
       aboutMe: "Desenvolvedora Web com paixão por tecnologia e experiência em projetos de ensino a distância. Possui habilidades sólidas em javascript, jquery, CSS, HTML e React. Comprometida com a acessibilidade digital e com o desenvolvimento de soluções inovadoras. Proativa, colaborativa e sempre disposta a aprender e crescer profissionalmente.",
       doc: "Curriculo"
-  }} 
+  }, doc: curriculo} 
   ,{ flag:eua, name:"en",  text: {
     themeDarkLabel: "switch to light theme",
     themeLightLabel: "switch to dark theme",
@@ -23,7 +25,7 @@ function App() {
     position: "Front-End Developer", 
     aboutMe: "Passionate Brazilian Web Developer with a focus on creating accessible and inclusive digital experiences. Experienced in developing e-learning platforms and web applications using JavaScript, React, and other front-end technologies. Committed to making a positive impact through technology.",
     doc: "Résumé"
-}}];
+}, doc: resume }];
   const [pt, eng] = languages;
   return (
     <Router>

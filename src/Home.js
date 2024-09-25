@@ -1,9 +1,9 @@
-import {useNavigate} from 'react-router-dom';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMoon, faSun, faImage } from '@fortawesome/free-solid-svg-icons'
 import { library, toHtml, icon } from "@fortawesome/fontawesome-svg-core";
+
 import Address from './Address';
+import Config from './Config';
 
 import './lightTheme.scss';
 import './darkTheme.scss';
@@ -22,33 +22,14 @@ const getSVGURI = (faIcon, color) =>{
 }
 
 function Home(props){
-    const [themeDark, setThemeDark] = props.themeDark;
+    const [themeDark] = props.themeDark;
     const [languages, currentLang = languages[0]] = props.lang;
     const {text} = currentLang;
-    const navigate = useNavigate();
-    const changePage = (event)=>{
-        const selectedValue = event.target.value;
-        navigate(`/${selectedValue.toLowerCase()}`); 
-    }
+    const docName = text.doc.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "");
+
     return (
         <section data-theme-dark={themeDark}>
-            <aside>
-                <div className='config-container'>
-                    <button onClick={() => setThemeDark((prevTheme) => !prevTheme)} aria-label={themeDark ? text.themeDarkLabel : text.themeLightLabel}>
-                        <FontAwesomeIcon icon={`fa-solid ${themeDark ?  'fa-sun' :'fa-moon' }` }/> 
-                    </button>
-                    <select onChange={changePage} defaultValue={currentLang.name} style={{backgroundImage: `url(${currentLang.flag})`}} aria-label={text.selectLabel}>
-                        {
-                            languages.map((lang, id) =>{
-                                return <option  key={id} value={lang.name}>
-                                            {lang.name}
-                                       </option>
-                            })  
-                        }
-                    </select>
-                </div>
-
-            </aside>
+            <Config themeDark={props.themeDark} lang={props.lang}/>
             <main>
                 <div className="left">
                     <img src={perfil} style={{backgroundImage: `url(${getSVGURI(faImage)})`}} width="200px" height="200px" alt=""/>
@@ -59,9 +40,8 @@ function Home(props){
                         <h2>{text.position}</h2>
                         <p>{text.aboutMe}</p>
                     </div>
-
                     <Address/>
-                    <a href=""><span>&#8594;</span> {text.doc}</a>
+                    <a href={currentLang.doc} download={`cleidiane_${docName}`}><span>&#8594;</span>{text.doc}</a>
                 </div>
             </main>
         </section>
