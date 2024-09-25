@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Home from './Home'
 import './style.scss';
 
@@ -8,6 +8,7 @@ import eua from "./imgs/eua.png";
 import resume from "./pdf/curriculo.pdf"
 import curriculo from "./pdf/curriculo.pdf";
 
+const basename = process.env.PUBLIC_URL;
 function App() {
   const [themeDark, setThemeDark] = useState(window.matchMedia('(prefers-color-scheme: dark)').matches);
   const languages = [{flag: brazil, name: "pt-BR", text: {
@@ -28,13 +29,13 @@ function App() {
 }, doc: resume }];
   const [pt, eng] = languages;
   return (
-    <Router>
+    <BrowserRouter basename={basename}>
       <Routes>
           <Route path="/" element={<Home themeDark={[themeDark, setThemeDark]} lang={[languages]} />}/>
           <Route path="/pt-br" element={<Home themeDark={[themeDark, setThemeDark]} lang={[languages, pt]} />}/>
           <Route path="/en" element={<Home themeDark={[themeDark, setThemeDark]} lang={[languages, eng]} />}/>
       </Routes>
-    </Router>
+    </BrowserRouter>
   );
 }
 
