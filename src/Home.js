@@ -1,5 +1,5 @@
-
-import { faMoon, faSun, faImage } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faImage, faDownload  } from '@fortawesome/free-solid-svg-icons'
 import { library, toHtml, icon } from "@fortawesome/fontawesome-svg-core";
 
 import Address from './Address';
@@ -11,7 +11,7 @@ import './darkTheme.scss';
 import perfil from "./imgs/perfil.jpg";
 
 
-library.add(faMoon, faSun, faImage);
+library.add(faImage, faDownload);
 const getSVGURI = (faIcon, color) =>{
     const abstract = icon(faIcon).abstract[0];
     if(color) {
@@ -41,7 +41,7 @@ function Home(props){
                         <p>{text.aboutMe}</p>
                     </div>
                     <Address/>
-                    <a href={currentLang.doc} download={`cleidiane_${docName}`}><span>&#8594;</span>{text.doc}</a>
+                    <a href={currentLang.doc} className="doc" download={`cleidiane_${docName}`}><FontAwesomeIcon icon={faDownload}/> <span>{text.doc}</span></a>
                 </div>
             </main>
         </section>

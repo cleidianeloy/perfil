@@ -22,6 +22,29 @@
             color: white;
         }
     }
+    .right{
+        a{
+            &.doc{
+                color: black;
+                background-color: white;
+                box-shadow: -5px 4px #0A9AeA;
+                svg{
+                    color: black;
+                }
+                &:hover{
+                    color: #003d65;
+                    svg{
+                        color: #003d65;
+                    }
+                }
+            }
+            &:hover{
+                svg{
+                    color: #0A9AeA;
+                }
+            }
+        }
+    }
     .svg-inline--fa{
         color: white;
     }
@@ -31,5 +54,10 @@
     aside{
         border-color: white;
     }
-
+    button:hover{
+        &:before{
+            color: black;
+            background-color: white;
+        }
+    }
 }

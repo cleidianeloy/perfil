@@ -29,7 +29,38 @@
             color: lightgray;
         }
     }
+    .right{
+        a{
+            &.doc{
+                background-color: #000000;
+                color: white;
+                box-shadow: -5px 4px #0669AA;
+                svg{
+                    color: white;
+                }
+                
+                &:hover{
+                    color: #89d0ff;
+                    svg{
+                        color: #89d0ff;
+                    }
+                }
+            }
+            &:hover{
+                svg{
+                    color: #0669AA;
+                }
+            }
+
+        }
+    }
     aside{
         border-color: black;
+    }
+    button:hover{
+        &:before{
+            color: white;
+            background-color: black;
+        }
     }
 }

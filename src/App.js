@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import { Routes, Route} from 'react-router-dom';
 import Home from './Home'
 import './style.scss';
 
@@ -16,7 +16,7 @@ function App() {
       selectLabel: "Mudar a Linguagem",
       position: "Desenvolvedora Front-End", 
       aboutMe: "Desenvolvedora Web com paixão por tecnologia e experiência em projetos de ensino a distância. Possui habilidades sólidas em javascript, jquery, CSS, HTML e React. Comprometida com a acessibilidade digital e com o desenvolvimento de soluções inovadoras. Proativa, colaborativa e sempre disposta a aprender e crescer profissionalmente.",
-      doc: "Curriculo"
+      doc: "Currículo"
   }, doc: curriculo} 
   ,{ flag:eua, name:"en",  text: {
     themeDarkLabel: "switch to light theme",
