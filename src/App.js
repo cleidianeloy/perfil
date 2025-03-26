@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Routes, Route} from 'react-router-dom';
 import Home from './Home'
-import './style.scss';
+import './scss/style.scss';
 
 import brazil from "./imgs/brazil.png";
 import eua from "./imgs/eua.png";
@@ -10,7 +10,7 @@ import curriculo from "./pdf/curriculo.pdf";
 
 function App() {
   const [themeDark, setThemeDark] = useState(window.matchMedia('(prefers-color-scheme: dark)').matches);
-  const languages = [{flag: brazil, name: "pt-BR", text: {
+  const languages = [{flag: brazil, name: "PT-BR", text: {
       themeDarkLabel: "Mudar para o tema claro",
       themeLightLabel: "Mudar para o tema escuro",
       selectLabel: "Mudar a Linguagem",
@@ -18,7 +18,7 @@ function App() {
       aboutMe: "Desenvolvedora Web com paixão por tecnologia e experiência em projetos de ensino a distância. Possui habilidades sólidas em javascript, jquery, CSS, HTML e React. Comprometida com a acessibilidade digital e com o desenvolvimento de soluções inovadoras. Proativa, colaborativa e sempre disposta a aprender e crescer profissionalmente.",
       doc: "Currículo"
   }, doc: curriculo} 
-  ,{ flag:eua, name:"en",  text: {
+  ,{ flag:eua, name:"EN",  text: {
     themeDarkLabel: "switch to light theme",
     themeLightLabel: "switch to dark theme",
     selectLabel: "switch language",

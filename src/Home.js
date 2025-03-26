@@ -5,9 +5,6 @@ import { library, toHtml, icon } from "@fortawesome/fontawesome-svg-core";
 import Address from './Address';
 import Config from './Config';
 
-import './lightTheme.scss';
-import './darkTheme.scss';
-
 import perfil from "./imgs/perfil.jpg";
 
 
