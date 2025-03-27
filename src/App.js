@@ -29,12 +29,10 @@ function App() {
   return (
     <div className='app'>
           <Routes>
-              {languages.map(function(lang, index){
-                if(index === 0){
-                  return <Route exact path="/" element={<Home themeDark={[themeDark, setThemeDark]} lang={[languages]} key={index}/>}/>
-                }else{
+               <Route exact path="/" element={<Home themeDark={[themeDark, setThemeDark]} lang={[languages]}/>}/>
+               {languages.map(function(lang, index){
+                 console.log(`/${lang.name.toLowerCase()}`)
                   return <Route path={`/${lang.name.toLowerCase()}`} element={<Home themeDark={[themeDark, setThemeDark]} lang={[languages, lang]} key={index} />}/>
-                }
               })}
           </Routes>
     </div>
