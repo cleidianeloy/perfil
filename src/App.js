@@ -26,14 +26,16 @@ function App() {
     aboutMe: "Passionate Brazilian Web Developer with a focus on creating accessible and inclusive digital experiences. Experienced in developing e-learning platforms and web applications using JavaScript, React, and other front-end technologies. Committed to making a positive impact through technology.",
     doc: "Résumé"
 }, doc: resume }];
-  const [pt, eng] = languages;
-
   return (
     <div className='app'>
           <Routes>
-              <Route exact path="/" element={<Home themeDark={[themeDark, setThemeDark]} lang={[languages]} />}/>
-              <Route path="/pt-br" element={<Home themeDark={[themeDark, setThemeDark]} lang={[languages, pt]} />}/>
-              <Route path="/en" element={<Home themeDark={[themeDark, setThemeDark]} lang={[languages, eng]} />}/>
+              {languages.map(function(lang, index){
+                if(index === 0){
+                  return <Route exact path="/" element={<Home themeDark={[themeDark, setThemeDark]} lang={[languages]} key={index}/>}/>
+                }else{
+                  return <Route path={`/${lang.name.toLowerCase()}`} element={<Home themeDark={[themeDark, setThemeDark]} lang={[languages, lang]} key={index} />}/>
+                }
+              })}
           </Routes>
     </div>
 
