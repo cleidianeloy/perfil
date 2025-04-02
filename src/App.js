@@ -5,7 +5,7 @@ import './scss/style.scss';
 
 import brazil from "./imgs/brazil.png";
 import eua from "./imgs/eua.png";
-import resume from "./pdf/curriculo.pdf"
+import resume from "./pdf/resume.pdf"
 import curriculo from "./pdf/curriculo.pdf";
 
 function App() {
