@@ -21,16 +21,16 @@
             "elements":[
                 {
                     "occupation": " Programador Web Pleno",
-                    "company":"SENAI",
-                    "start": "2021-06",
-                    "end": null,
+                    "institution":"SENAI",
+                    "start": "Jun 2021",
+                    "end": "Atualmente",
                     "desc": "Meu trabalho é produzir cursos a distância em SCORM para LMS utilizando HTML, CSS, Jquery, Javascript. A tarefa inclui pegar um conteúdo feito por um professor e incluir em páginas web onde o estudante tem acesso. Além disso, aproveito para desenvolver novos recursos como slider, atividades interativas, reprodutores de áudio, entre outros. Para gerenciar meu trabalho, tenho utilizado o Trello como organizador de tarefas e o GitLab como reposítorio. " 
                 },
                 {
                     "occupation": "Junior Developer",
-                    "company":"NTT Data",
-                    "start": "2021-01",
-                    "end": "2021-05",
+                    "institution":"NTT Data",
+                    "start": "Jan 2021",
+                    "end": "Maio 2021",
                     "desc": "Como programador júnior, adquiri experiência em PL/SQL, atuando como suporte nível 3. Nessa função, resolvi problemas complexos de clientes, analisando o banco de dados e desenvolvendo soluções em PL/SQL, Shellscript e Java. Trabalhando em equipe, automatizei e documentei processos, como também contribuí para a melhoria dos serviços prestados." 
                 }
             ]},
@@ -38,22 +38,22 @@
             "title": "Formação Acadêmica",
             "elements": [ 
                 {
-            "topic": "Inglês com foco em conversação",
+            "title": "Inglês com foco em conversação",
             "institution": "Times Idiomas",
-            "start":"2022-01",
-            "end": "2023-06"
+            "start":"Jan 2022",
+            "end": "Jun 2023"
                 },
                 {
-                "topic": "Gestão em Tecnologia da Informação",
+                "title": "Gestão em Tecnologia da Informação",
                 "institution": "Uniasselvi",
-                "start":"2018-08",
-                "end": "2021-01"
+                "start":"Ago 2018",
+                "end": "Jan 2021"
                 },
                 {
-                "topic": "Desenvolvimento de Sistemas",
+                "title": "Desenvolvimento de Sistemas",
                 "institution": "IFSC",
-                "start":"2019-08",
-                "end": "2021-04"
+                "start":"Ago 2019",
+                "end": "Abr 2021"
                 }  
         ]},
         "extras": {
@@ -62,14 +62,14 @@
                 { 
                     "title": "Trabalho Voluntário",
                     "institution": "PAQ", 
-                    "start": "2025-01",
-                    "end": null,
+                    "start": "Jan 2025",
+                    "end": "Atualmente",
                     "desc":"Atuo como mentora trabalhando com jovens com o objetivo de ajudá-los a entrar no mercado da tecnologia"},
                 {  
                     "title": "Trabalho Voluntário",
                     "institution": "Web Para Todos", 
-                    "start": "2022-08",
-                    "end": null,
+                    "start": "Ago 2022",
+                    "end": "Atualmente",
                     "desc":" Presto regulamente serviços voluntários ao Movimento Web para Todos e, com isso, contribuo ativamente para a transformação da web brasileira num ambiente muito mais justo, inclusivo e acessível a todas as pessoas."}
         ]}
     },
@@ -86,16 +86,16 @@
             "elements": [
                 {
                     "occupation": "Pleno Web Developer",
-                    "company":"SENAI",
-                    "start": "2021-06",
-                    "end": null,
+                    "instution":"SENAI",
+                    "start": "Jun 2021",
+                    "end": "Currently",
                     "desc": "The task in this experience is developing learning distance coursesusing HTML, CSS, JQuery, and Javascript, JSON packing as a SCORM to run in LMSs, and saving at GitLab. I used to develop recourses like sliders, interactive exercises, audio players, and others. We already adapted our code to use React as a framework. We use Agile Methodology, doing sprints, using Trello (Kanban)." 
                 },
                 {
                     "occupation": "Junior Developer",
-                    "company":"NTT Data",
-                    "start": "2021-01",
-                    "end": "2021-05",
+                    "institution":"NTT Data",
+                    "start": "Jan 2021",
+                    "end": "May 2021",
                     "desc": "As a Junior Developer,  I got experience analyzing databases anddeveloping solutions using PL/SQL, ShellScript, and Java. So I could offer proper resolutions to complex client problems in level 3 support. Working with teamwork, I helped to automate and document processes, contributing to improving support services. " 
                 }
             ]
@@ -104,22 +104,22 @@
             "title" :"Education",
             "elements":[ 
                     {
-                    "topic": "Conversational English",
+                    "title": "Conversational English",
                     "institution": "Times Idiomas",
-                    "start":"2022-01",
-                    "end": "2023-06"
+                    "start":"Jan 2022",
+                    "end": "Jun 2023"
                     },
                     {
-                        "topic": " Information Technology Management.",
+                        "title": " Information Technology Management.",
                         "institution": "Uniasselvi",
-                        "start":"2018-08",
-                        "end": "2021-01"
+                        "start":"Ago 2018",
+                        "end": "Jan 2021"
                     },
                     {
-                        "topic": "Systems Development",
+                        "title": "Systems Development",
                         "institution": "IFSC",
-                        "start":"2019-08",
-                        "end": "2021-04"
+                        "start":"Ago 2018",
+                        "end": "Apr 2021"
                     }
             
             ]},
@@ -129,14 +129,14 @@
                 { 
                     "title": "Voluntary Work",
                     "institution": "PAQ", 
-                    "start": "2025-01",
-                    "end": null,
+                    "start": "Jan 2025",
+                    "end": "Currently",
                     "desc":"I've been working voluntarily at Prototipando a Quebrada (Prototyping the Hood) organization, as a mentor for a young student starting her studies in Information Technology."},
                 {  
                     "title": "Voluntary Work",
                     "institution": "Web Para Todos", 
                     "start": "2022",
-                    "end": null,
+                    "end": "Currently",
                     "desc":"I regularly volunteer for the Web Para Todos (Web to Everyone) movement and, through this, actively contribute to transforming the Brazilian web into a much fairer, inclusive, and accessible environment for all."}
                 ]}
     }
