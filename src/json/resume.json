@@ -16,46 +16,47 @@
             "elements": [{
                 "desc": " Sou apaixonada por tecnologia com sólido conhecimento em Javascript, HTML, CSS e JQuery. Experiência em desenvolvimento web, incluindo React, NodeJS e consumo de APIs, com projetos práticos demonstrados no Github. Aplico os princípios de Clean Architecture em meus projetos, buscando um código mais organizado, testável e de fácil manutenção. Atualmente, contribuo para o SENAI, renomada instituição de educação brasileira, desenvolvendo materiais didáticos para diversos níveis de ensino. Engajada com a acessibilidade web, participo do movimento \"Web para Todos\"."
             }]},
+            "education": { 
+                "title": "Formação Acadêmica",
+                "elements": [ 
+                    {
+                "title": "Inglês com foco em conversação",
+                "institution": "Times Idiomas",
+                "start":"Jan 2022",
+                "end": "Jun 2023"
+                    },
+                    {
+                    "title": "Gestão em Tecnologia da Informação",
+                    "institution": "Uniasselvi",
+                    "start":"Ago 2018",
+                    "end": "Jan 2021"
+                    },
+                    {
+                    "title": "Desenvolvimento de Sistemas",
+                    "institution": "IFSC",
+                    "start":"Ago 2019",
+                    "end": "Abr 2021"
+                    }  
+            ]},
         "career": { 
             "title":"Carreira",
             "elements":[
                 {
-                    "occupation": " Programador Web Pleno",
+                    "title": " Programador Web Pleno",
                     "institution":"SENAI",
                     "start": "Jun 2021",
                     "end": "Atualmente",
                     "desc": "Meu trabalho é produzir cursos a distância em SCORM para LMS utilizando HTML, CSS, Jquery, Javascript. A tarefa inclui pegar um conteúdo feito por um professor e incluir em páginas web onde o estudante tem acesso. Além disso, aproveito para desenvolver novos recursos como slider, atividades interativas, reprodutores de áudio, entre outros. Para gerenciar meu trabalho, tenho utilizado o Trello como organizador de tarefas e o GitLab como reposítorio. " 
                 },
                 {
-                    "occupation": "Junior Developer",
+                    "title": "Junior Developer",
                     "institution":"NTT Data",
                     "start": "Jan 2021",
                     "end": "Maio 2021",
                     "desc": "Como programador júnior, adquiri experiência em PL/SQL, atuando como suporte nível 3. Nessa função, resolvi problemas complexos de clientes, analisando o banco de dados e desenvolvendo soluções em PL/SQL, Shellscript e Java. Trabalhando em equipe, automatizei e documentei processos, como também contribuí para a melhoria dos serviços prestados." 
                 }
             ]},
-        "education": { 
-            "title": "Formação Acadêmica",
-            "elements": [ 
-                {
-            "title": "Inglês com foco em conversação",
-            "institution": "Times Idiomas",
-            "start":"Jan 2022",
-            "end": "Jun 2023"
-                },
-                {
-                "title": "Gestão em Tecnologia da Informação",
-                "institution": "Uniasselvi",
-                "start":"Ago 2018",
-                "end": "Jan 2021"
-                },
-                {
-                "title": "Desenvolvimento de Sistemas",
-                "institution": "IFSC",
-                "start":"Ago 2019",
-                "end": "Abr 2021"
-                }  
-        ]},
+
         "extras": {
             "title":"Aprendizado Contínuo",
             "elements": [
@@ -81,25 +82,6 @@
                 "desc": "I'm passionate about technology, with a strong knowledge of Javascript, HTML, CSS, and JQuery. I have web development experience applying Clean Architecture using React, NodeJS, and API consumption. Currently, I've been working at Senai, a renowned Brazilian education company, developing SCORMs for Learning Management Systems. I'm contributing to web accessibility at the organization Web Para Todos (Web to Everyone). Also, I've been working voluntarily at Prototipando a Quebrada (Prototyping the Hood) as a mentor."
             }]
         },
-        "carrer": {
-            "title": "Career",
-            "elements": [
-                {
-                    "occupation": "Pleno Web Developer",
-                    "instution":"SENAI",
-                    "start": "Jun 2021",
-                    "end": "Currently",
-                    "desc": "The task in this experience is developing learning distance coursesusing HTML, CSS, JQuery, and Javascript, JSON packing as a SCORM to run in LMSs, and saving at GitLab. I used to develop recourses like sliders, interactive exercises, audio players, and others. We already adapted our code to use React as a framework. We use Agile Methodology, doing sprints, using Trello (Kanban)." 
-                },
-                {
-                    "occupation": "Junior Developer",
-                    "institution":"NTT Data",
-                    "start": "Jan 2021",
-                    "end": "May 2021",
-                    "desc": "As a Junior Developer,  I got experience analyzing databases anddeveloping solutions using PL/SQL, ShellScript, and Java. So I could offer proper resolutions to complex client problems in level 3 support. Working with teamwork, I helped to automate and document processes, contributing to improving support services. " 
-                }
-            ]
-        },
         "education": {
             "title" :"Education",
             "elements":[ 
@@ -123,6 +105,26 @@
                     }
             
             ]},
+        "carrer": {
+            "title": "Career",
+            "elements": [
+                {
+                    "title": "Pleno Web Developer",
+                    "instution":"SENAI",
+                    "start": "Jun 2021",
+                    "end": "Currently",
+                    "desc": "The task in this experience is developing learning distance coursesusing HTML, CSS, JQuery, and Javascript, JSON packing as a SCORM to run in LMSs, and saving at GitLab. I used to develop recourses like sliders, interactive exercises, audio players, and others. We already adapted our code to use React as a framework. We use Agile Methodology, doing sprints, using Trello (Kanban)." 
+                },
+                {
+                    "title": "Junior Developer",
+                    "institution":"NTT Data",
+                    "start": "Jan 2021",
+                    "end": "May 2021",
+                    "desc": "As a Junior Developer,  I got experience analyzing databases anddeveloping solutions using PL/SQL, ShellScript, and Java. So I could offer proper resolutions to complex client problems in level 3 support. Working with teamwork, I helped to automate and document processes, contributing to improving support services. " 
+                }
+            ]
+        },
+
         "extras": {
             "title": " Ongoing learning",
             "elements":[

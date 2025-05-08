@@ -1,4 +1,4 @@
-import {useNavigate} from 'react-router-dom';
+import {useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMoon, faSun} from '@fortawesome/free-solid-svg-icons'
 import { library} from "@fortawesome/fontawesome-svg-core";
@@ -7,12 +7,12 @@ function Config(props){
     const [themeDark, setThemeDark] = props.themeDark;
     const [languages, currentLang = languages[0]] = props.lang;
     const {text} = currentLang;
+    const navigate = useNavigate();
 
     library.add(faMoon, faSun);
-    const navigate = useNavigate();
-    const changePage = (event)=>{
+    const changePage = async (event)=>{
         const selectedValue = event.target.value;
-        navigate(`/${selectedValue.toLowerCase()}`); 
+        navigate(`/${selectedValue.toLowerCase()}`);
     }
     
     return(
