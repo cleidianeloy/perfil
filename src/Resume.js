@@ -13,7 +13,7 @@ function Resume(props){
     return (
         <section data-theme-dark={false} >
             <main id="resume"> 
-                   <Link to={`/`} className='doc'><FontAwesomeIcon icon={faHouse}/> <span>Home</span></Link>
+                   <Link to={`/`} className='home'><FontAwesomeIcon icon={faHouse}/> <span>Home</span></Link>
                     <header>
                         <div id="principal">
                             <div className="topic-container">
