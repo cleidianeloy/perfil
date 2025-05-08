@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faImage, faPaperPlane  } from '@fortawesome/free-solid-svg-icons'
 import { library, toHtml, icon } from "@fortawesome/fontawesome-svg-core";
-
+import {Link} from 'react-router-dom';
 import Address from './Address';
 import Config from './Config';
 
@@ -38,8 +38,7 @@ function Home(props){
                         <p>{text.aboutMe}</p>
                     </div>
                     <Address/>
-                    
-                    <a className="doc" href={`/${docName}`} ><FontAwesomeIcon icon={faPaperPlane}/> <span>{text.doc}</span></a>
+                    <Link to={`/${docName}`} className='doc'><FontAwesomeIcon icon={faPaperPlane}/> <span>{text.doc}</span></Link>
                 </div>
             </main>
         </section>
