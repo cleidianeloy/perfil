@@ -3,6 +3,7 @@ import json from './json/resume.json';
 import './scss/resume.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhone, faHouse} from '@fortawesome/free-solid-svg-icons'
+import {Link} from 'react-router-dom';
 function Resume(props){
     const [languages, currentLang = languages[0]] = props.lang;
     const {text} = currentLang;
@@ -12,7 +13,7 @@ function Resume(props){
     return (
         <section data-theme-dark={false} >
             <main id="resume"> 
-                    <a className="home" href={`/`} ><FontAwesomeIcon icon={faHouse}/> <span>Home</span></a>  
+                   <Link to={`/`} className='doc'><FontAwesomeIcon icon={faHouse}/> <span>Home</span></Link>
                     <header>
                         <div id="principal">
                             <div className="topic-container">
