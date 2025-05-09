@@ -3,7 +3,7 @@
 [![Linguagens](https://img.shields.io/github/languages/count/cleidianeloy/perfil)](https://github.com/cleidianeloy/perfil)
 [![Tamanho do Repositório](https://img.shields.io/github/repo-size/cleidianeloy/perfil)](https://github.com/cleidianeloy/perfil)
 (https://cleidianeloy.github.io/perfil/) <p align="center">
-  <img src="./public/preview.PNG" alt="Preview" width="200">
+  <img src="./public/preview.PNG" alt="Preview">
 </p>
 
 > Um portfólio web pessoal com design suave em tons de azul, destacando minha personalidade calma e a paixão pela tecnologia.
