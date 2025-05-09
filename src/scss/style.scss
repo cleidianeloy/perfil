@@ -18,7 +18,7 @@ section{
                 svg{
                     height: 2rem;
                 }
-                &:hover{
+                /*&:hover{
                     position: relative;
                     &:before{
                         border-radius: 3rem;
@@ -29,7 +29,7 @@ section{
                         width: max-content;
                         padding: 1rem;
                     }
-                }
+                }*/
             }
             width: min-content;
             display: flex;
