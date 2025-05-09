@@ -10,7 +10,7 @@
 
 ## 🚀 Demonstração
 
-Você pode visualizar meu portfólio online aqui: [https://cleidianeloy.github.io/perfil/](https://SEU_USUARIO.github.io/perfil/)
+Você pode visualizar meu portfólio online aqui: [https://cleidianeloy.github.io/perfil/](https://cleidianeloy.github.io/perfil/)
 
 ## ✨ Funcionalidades Principais
 
